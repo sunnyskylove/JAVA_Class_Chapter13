@@ -10,12 +10,13 @@ public class Application02 {
         ExceptionTest et = new ExceptionTest();
 
         /* 상품가격은 10000원, 가지고 있는 돈 50000원 */
-        try {                                       //예외 발생 가능한 객체 만들기
+
+        try {                                        // if_예외 발생 가능한 객체 만들기 (if-else 방식과 같다)
             et.checkEnoughMoney(10000, 50000);
 
             System.out.println("===============상품 구입 가능==================");
 
-        } catch (Exception e) {                     //예외 발생시, 캐치~!
+        } catch (Exception e) {                     // else_예외 발생시, 캐치~!
             System.out.println("===============상품 구입 불가능===================");
             // throw new RuntimeException(e); 이었는데, 지우고 출력문 작성!
         }

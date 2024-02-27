@@ -10,11 +10,11 @@ public class Application03 {
 
         try {
             et.checkEnoughMoney(50000, 10000);
-            System.out.println("===============상품 구입 가능==================");
+            System.out.println("===============상품 구입 가능=====================");
 
         } catch (Exception e) {
             System.out.println("===============상품 구입 불가능===================");
-            // throw new RuntimeException(e); 이었는데, 지우고 출력문 작성!
+            // * throw new RuntimeException(e); 이었는데, 지우고 출력문 작성!
 
         }
 
