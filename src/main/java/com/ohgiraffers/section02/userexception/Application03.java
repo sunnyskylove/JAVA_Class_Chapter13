@@ -15,6 +15,7 @@ public class Application03 {
 
         try {
             et.checkEnoughMoney(20000, 10000);
+
         } catch (PriceNegativeException | MoneyNegativeException e) {               //alt+enter > 2 > 2
 
             System.out.println(e.getMessage() + "발생!!!");

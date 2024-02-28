@@ -20,9 +20,10 @@ public class Application02 {
 
         try {                                           // * if-else 와 비슷하다~!!
             et.checkEnoughMoney(30000,20000);
+
         } catch (PriceNegativeException e) {                 //가격이 음수일때
             //맞는 클래스로 맞게 적용을 해야지만, 밑에도 적용이 된다.(부모???)
-            // 첫번째 모두 흡수.
+            // 첫번째 모두 흡수
             // 따라서 PriceNegativeException 이 아닌 Exception 만 입력하게 되면, 하위 모두 오류발생됨
 
             System.out.println("PriceNegativeException 발생!!!");
